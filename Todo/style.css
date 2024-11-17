@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    position: relative;
+  }
+  .app {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f6fa;
+    color: #2f3542;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .app-container {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .app-title {
+    font-size: 2rem;
+    color: #00a8ff;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 75%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #00a8ff;
+  }
+  
+  button {
+    background-color: #00a8ff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0984e3;
+  }
+  
+  .todo-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #f0f4f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-list li.completed {
+    text-decoration: line-through;
+    color: #b2bec3;
+  }
+  
+  .todo-list li:hover {
+    background-color: #dfe6e9;
+  }
+  
+  button.delete {
+    background-color: #e74c3c;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.delete:hover {
+    background-color: #c0392b;
+  }
+  
+  .empty-message {
+    color: #b2bec3;
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 20px;
+  }
+  
+  #contact{
+    color: #00a8ff;
+    font-size: 1.6rem;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    transition: all .5s ease;
+  }
+  #contact:hover{
+    transform: scale(1.2);
+  }
+
+  @media (max-width: 500px) {
+    #contact{
+        font-size: 2.2rem;
+    }
+  }

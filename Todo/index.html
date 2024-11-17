@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Todo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="./favicon.ico" />
+  </head>
+  <body>
+    <a id="contact" class="contact" href="mailto: mdnaseerjgl@gmail.com"
+      ><i class="fa-solid fa-id-card"></i
+    ></a>
+    <section class="app">
+      <div class="app-container">
+        <h1 class="app-title">Task List</h1>
+
+        <div class="input-container">
+          <input type="text" id="todoInput" placeholder="Add a new task..." />
+          <button id="addBtn">Add</button>
+        </div>
+
+        <ul id="todoList" class="todo-list"></ul>
+
+        <p id="empty-message" class="empty-message">No tasks to show!</p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
